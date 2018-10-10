@@ -37,8 +37,11 @@
             return response.json();
         })
         .then(function(myJson) {
+        $('#newsstories > tr').remove();
         var articles = myJson.articles;
         var table = document.getElementById("newsstories");
+
+        document.getElementById("headline").innerHTML = "All of the latest " + type + " news";
 
         for (var i = 0; i < articles.length; i++) {
             console.log(articles[i].title);

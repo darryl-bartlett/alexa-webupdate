@@ -3,6 +3,7 @@
 		<title>News Stories</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<style>
 		td {
 			font-family: 'PT Sans', sans-serif;
@@ -16,10 +17,10 @@
 		</style>
 	</head>
 		<body>
-			<h1 style = "font-family: 'Raleway', sans-serif;">News Stories</h1>
+			<h1 style = "font-family: 'Raleway', sans-serif;">Latest News</h1>
 			<table id="newsstories">
 				<tr>
-					<td style="font-weight:bold;">Latest Stories</td>
+					<td id="headline" style="font-weight:bold; font-size:18px"></td>
 				</tr>
 			</table>
 		<p style = "position:absolute; bottom:0;">Powered by NewsAPI.org</p>
